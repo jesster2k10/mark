@@ -1,0 +1,41 @@
+<div id="Customizer-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="customizer">
+  <div id="DragDropArea">
+    <h3>Drag and Drop Files Here<h3/>
+    <input type="file" title="Click to add Files" name="properties[Image]">
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Customizer",
+    "settings": []
+  }
+{% endschema %}
+
+{% javascript %}
+// <script>
+var variantId = theme.readCookie('custom_sticker__added__product_id');
+var dragDropSelector = '#DragDropArea';
+
+$(dragDropSelector).dmUploader({
+  url: '/cart/add.js',
+  extraData: {
+    "id": variantId,
+    "quantity": 1,
+  },
+  dataType: 'text json',
+  extFilter: ['jpg', 'jpeg', 'png'],
+  onInit() {
+    console.log('Callback: Plugin initialized');
+  },
+  onUploadSuccess(id, data) {
+    console.log(id);
+    console.log(data);
+  },
+  onUploadError(id, xhr) {
+    console.log(id);
+    console.log(xhr);
+  }
+});
+// </script>
+{% endjavascript %}

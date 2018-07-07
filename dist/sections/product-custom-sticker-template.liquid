@@ -1,0 +1,203 @@
+<div class="FullWidth" id="ProductSection-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="custom-sticker-product" data-enable-history-state="true" data-ajax="{{ section.settings.enable_ajax }}" data-stock="{{ section.settings.stock_enable }}">
+  <form id="AddToCartForm" action="/cart/add" method="post">
+    {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+    <div class="grid CustomSticker-Header__Container" style="background-image: url({{ featured_image | img_url: 'master' }})">
+      <div class="page-width">
+        <div class="grid__item medium-up--two-thirds small--one-whole">
+        <div class="CustomSticker-Header">
+          <h1>{{ product.title }}</h1>
+          <p>{{ product.description }}</p>
+        </div>
+      </div>
+      <div class="grid__item medium-up--one-third small--one-whole">
+       <div class="CustomerSticker__Variants Options">
+          {% for option in product.options_with_values %}
+            <div class="CustomerSticker__Variants--Inner">
+              <h4 class="Variant__Title">
+                  {{ option.name | escape }}
+              </h4>
+
+              {% assign option_index = forloop.index %}
+              {% for value in option.values %}
+                {% assign variant_label_state = true %}
+                {% if product.options.size == 1 %}
+                  {% unless product.variants[forloop.index0].available  %}
+                    {% assign variant_label_state = false %}
+                  {% endunless %}
+                {% endif %}
+
+                {% if forloop.first == true %}<br>{% endif %}     
+                <input type="radio"
+                  data-product-radio
+                  {% if option.selected_value == value %} checked="checked"{% endif %}
+                  {% unless variant_label_state %} disabled="disabled"{% endunless %}
+                  value="{{ value | escape }}"
+                  data-index="option{{ option_index }}"
+                  name="{{ option.name | handleize }}"
+                  class="single-option-selector__radio{% unless variant_label_state %} disabled{% endunless %}"
+                  id="ProductSelect-option-{{ option.name | handleize }}-{{ value | escape }}"></input>
+                <label for="ProductSelect-option-{{ forloop.index0 }}">{{ value | escape }}</label><br>
+              {% endfor %}
+            </div>
+          {% endfor %}
+
+          <div class="CustomerSticker__Variants--Inner Continue">
+            <h4 id="ProductCost" class="Product__Cost"></h4>
+            <input id="Continue" disabled type="submit" class="btn primary" value="Continue"></input>
+            <div id="AddToCartError" class="errors Cart__Error gone"></div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <input id="VariantInput" data-id-input type="text" name="id" hidden />
+    <input value="1" type="text" name="quantity" hidden />
+
+  </form>
+
+  {% unless product == empty %}
+    <script type="application/json" id="ProductJson">
+      {{ product | json }}
+    </script>
+  {% endunless %}
+
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Sticker Product",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet 'scss' %}
+// <style>
+.FullWidth {
+  margin-top: -30px;
+}
+@media only screen and (min-width: 750px) {
+  .FullWidth {
+    margin-top: -60px;
+  }
+}
+.CustomSticker-Header__Container {
+   padding: 30px 20px 200px;
+}
+
+@media (min-width: 750px) {
+	.CustomSticker__Variants {
+		float: right;
+    font-size: 1rem;
+    min-height: 500px;
+	}
+}
+
+.Options {
+	background-color: white;
+    padding: 15px 20px;
+	border: 2px solid grey;
+	border-radius: 8px;
+}
+
+.CustomerSticker__Variants--Inner {
+  margin-bottom: 1.2em;
+  input[type=radio] {
+    margin-right: 0.5em;
+  }
+  label[for] {
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1.2em;
+  }
+}
+
+.Variant__Title, .Product__Cost {
+	font-size: 1.5em;
+	color: black;
+	text-transform: none;
+}
+.Cart__Error {
+  margin-top: 2em;
+}
+.Cart__Error.gone {
+  visibility: hidden;
+  display: none;
+}
+// </style>
+{% endstylesheet %}
+
+{% javascript %}
+// <script>
+var formSelector = '#AddToCartForm';
+var singleOptionSelector = '[data-product-radio]';
+var costSelector = '#ProductCost';
+var continueSelector = '#Continue';
+var variantSelector = '#VariantInput';
+var cartErrorSelector = '#AddToCartError';
+var idInput = '[data-id-input]';
+var product = JSON.parse(
+  $('#ProductJson').html()
+);
+
+$(singleOptionSelector).on('change', function() {
+  var selectedValues = _.map($(singleOptionSelector), function(element) {
+    var $element = $(element);
+    var type = $element.attr('type');
+    var currentOption = {};
+
+    if (type === 'radio' || type === 'checkbox') {
+      if ($element[0].checked) {
+        currentOption.value = $element.val();
+        currentOption.index = $element.data('index');
+
+        return currentOption;
+      } else {
+        return false;
+      }
+    } else {
+      currentOption.value = $element.val();
+      currentOption.index = $element.data('index');
+
+      return currentOption;
+    }
+  });
+  selectedValues = _.compact(selectedValues);
+  var variants = product.variants;
+  var found = _.find(variants, function(variant) {
+    return selectedValues.every(function(values) {
+      return _.isEqual(variant[values.index], values.value);
+    });
+  });
+
+  $(continueSelector).removeAttr('disabled');
+  $(variantSelector).attr('value', found.id);
+  $(costSelector)
+    .html('Cost: ' + theme.Currency.formatMoney(found.price, theme.strings.moneyFormat))
+    .show();
+});
+$(formSelector).submit(function(event) {
+  event.preventDefault();
+  var data = $(this).serialize();
+  $.ajax({
+    type: 'POST',
+    url: '/cart/add.js',
+    dataType: 'text json',
+    data: data,
+    success(data) {
+      var id = data.id;
+      theme.createCookie('custom_sticker__added__product_id', id, 7);
+      window.location = '/pages/customize';
+    },
+    error(xhr) {
+      var error = JSON.parse(xhr.responseText);
+      if (error) {
+        $(cartErrorSelector)
+          .html(error.description)
+          .removeClass('gone');
+      }
+    }
+  });
+})
+// </script>
+{% endjavascript %}

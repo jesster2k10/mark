@@ -1,0 +1,45 @@
+{% assign found_option = false %}
+{% assign is_size = false %}
+{% assign is_quantity = false %}
+{% assign option_index = 0 %}
+
+{% for option in product.options %}
+  {% if option == chosenOption %}
+     {% assign found_option = true %}
+     {% assign option_index = forloop.index0 %}
+     {% assign downcased_option = chosenOption | downcase %}
+
+     {% if downcased_option contains 'size' or downcased_option contains 'measurment' %}
+        {% assign is_size = true %}
+     {% endif %}
+
+     {% if downcased_option contains 'quantity' or downcased_option contains 'amount' %}
+        {% assign is_quantity = true %}
+     {% endif %}
+
+   {% endif %}
+{% endfor %}
+
+<p>{{ found_option }}
+
+{% if found_option %}   
+  {% if is_size %}
+      <div class="CustomerSticker__Variants--Inner Sizes">
+         <label>Select a Size</label>
+          {% for variant in product.variants %}
+              {% assign value = variant.options[option_index] %}
+                  {% if forloop.first == true %}<br>{% endif %}
+                      <input 
+                          name="id"
+                          value="{{ variant.id }}"
+                          {% unless variant.available %}disabled{% endunless %}
+                          type="radio" {% if product_option.selected_value == value %}selected{% endif %}
+                          >
+                              {{ value }}
+                      <br>
+         {% endfor %}
+      </div>
+  {% endif %}
+{% else %}
+<p />
+{% endif %}

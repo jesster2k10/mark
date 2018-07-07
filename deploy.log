@@ -1,0 +1,50 @@
+Deploy complete @ Sat Jul 07 2018 12:09:48 GMT+0100 (IST). added/changed 1 file(s): assets/vendor.js.
+Deploy complete @ Sat Jul 07 2018 12:14:14 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:15:36 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:16:29 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:16:43 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:17:43 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:18:56 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:19:08 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:19:39 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:20:20 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:22:51 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:23:38 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:25:04 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:27:40 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:27:44 GMT+0100 (IST). added/changed 1 file(s): assets/vendor.js.
+Deploy complete @ Sat Jul 07 2018 12:27:54 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:27:59 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:28:27 GMT+0100 (IST). added/changed 1 file(s): sections/product-custom-sticker-template.liquid.
+Deploy complete @ Sat Jul 07 2018 12:29:08 GMT+0100 (IST). added/changed 1 file(s): templates/page.customize.liquid.
+Deploy error @ Sat Jul 07 2018 12:30:17 GMT+0100 (IST). added/changed 1 file(s): sections/v.
+12:30:17 [development]Asset Perform Update to sections/v at host paranoid-stickers.myshopify.com
+	Status: 422 Unprocessable Entity
+	Errors: Must have a .liquid file extension
+ 
+Deploy complete @ Sat Jul 07 2018 12:30:24 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:30:25 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:30:26 GMT+0100 (IST). removed 1 file(s): sections/v.
+Deploy complete @ Sat Jul 07 2018 12:30:30 GMT+0100 (IST). added/changed 1 file(s): templates/page.customize.liquid.
+Deploy complete @ Sat Jul 07 2018 12:30:31 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:31:59 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:32:18 GMT+0100 (IST). added/changed 1 file(s): assets/theme.scss.liquid.
+Deploy complete @ Sat Jul 07 2018 12:32:20 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:41:44 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:42:09 GMT+0100 (IST). added/changed 1 file(s): templates/page.customize.liquid.
+Deploy complete @ Sat Jul 07 2018 12:43:16 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:43:18 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:43:43 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:43:45 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:43:57 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:44:10 GMT+0100 (IST). added/changed 1 file(s): assets/theme.js.
+Deploy complete @ Sat Jul 07 2018 12:44:14 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:44:25 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:45:33 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:45:47 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:45:54 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:48:23 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:48:42 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:48:45 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:48:56 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.
+Deploy complete @ Sat Jul 07 2018 12:53:16 GMT+0100 (IST). added/changed 1 file(s): sections/customizer.liquid.

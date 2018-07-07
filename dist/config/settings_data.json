@@ -1,0 +1,576 @@
+{
+  "current": {
+    "color_header_bg": "#67c5c2",
+    "color_header_links": "#1a1a1a",
+    "color_body_bg": "#ffeed4",
+    "color_content_bg": "#67c5c2",
+    "color_body_headings": "#1a1a1a",
+    "color_body_text": "#666",
+    "color_button_bg": "#d8232f",
+    "color_button_text": "#fff",
+    "color_footer_bg": "#67c5c2",
+    "color_footer_text": "#1a1a1a",
+    "color_hero_text": "#ffffff",
+    "color_hero_bg": "#d8232f",
+    "type_accent_family": "open_sans_condensed_n7",
+    "type_accent_spacing": false,
+    "type_accent_transform": true,
+    "type_base_family": "source_sans_pro_n4",
+    "type_base_size": "14px",
+    "type_nav_size": "17px",
+    "type_nav_spacing": true,
+    "type_nav_transform": true,
+    "product_images_padding": true,
+    "product_vendor_enable": true,
+    "share_image": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/ParanoidPrintCo\/",
+    "social_twitter_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/paranoid_print_co\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/EYE_01_581b0408-6896-4775-8be8-d411f1302b29.png",
+    "custom_sticker_template_show_columns": true,
+    "custom_sticker_template_show_video": true,
+    "custom_sticker_template_show_quotes": true,
+    "custom_sticker_template_show_featured_products": true,
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#d8232f",
+    "checkout_button_color": "#d8232f",
+    "checkout_error_color": "#e32c2b",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#d8232f",
+    "checkout_use_header_image": false,
+    "color_newsletter_input": "#303030",
+    "sections": {
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "placeholder": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SLIDE_12.jpg",
+              "title": "CUSTOM STICKERS",
+              "subheading": "",
+              "link": ""
+            }
+          },
+          "1530832540494": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SLIDE_17.jpg",
+              "title": "DOWNTOWN TORONTO",
+              "subheading": "At Paranoid Print Co.",
+              "link": "https:\/\/weareparanoid.com\/"
+            }
+          },
+          "1530834059001": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SLIDE_4_25928dbd-8146-42dd-983b-b84463433311.jpg",
+              "title": "DIE CUT",
+              "subheading": "Order Now",
+              "link": "shopify:\/\/collections\/custom-vinyl-stickers"
+            }
+          },
+          "1530835049749": {
+            "type": "slide",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SLIDE_15.jpg",
+              "title": "DURABLE",
+              "subheading": "Outdoor Laminated Vinyl",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "placeholder",
+          "1530832540494",
+          "1530834059001",
+          "1530835049749"
+        ],
+        "settings": {
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "linklist": {
+            "type": "menu",
+            "settings": {
+              "link_list": "main-menu"
+            }
+          },
+          "social": {
+            "type": "social",
+            "settings": {
+              "title": "Follow us",
+              "align": "center"
+            }
+          },
+          "1530828978395": {
+            "type": "newsletter",
+            "settings": {
+              "color_newsletter_input": "#1a1a1a",
+              "color_newsletter_input_text": "#fff",
+              "title": "Be Paranoid - We Are Watching You",
+              "subheading": ""
+            }
+          }
+        },
+        "block_order": [
+          "linklist",
+          "social",
+          "1530828978395"
+        ],
+        "settings": {
+          "show_payment_icons": true
+        }
+      },
+      "featured-collections": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "featured-collections-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "custom-vinyl-stickers"
+            }
+          },
+          "featured-collections-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "square-and-rectangle-stickers"
+            }
+          },
+          "featured-collections-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage"
+            }
+          }
+        },
+        "block_order": [
+          "featured-collections-0",
+          "featured-collections-1",
+          "featured-collections-2"
+        ],
+        "settings": {
+          "stretch_collection_image": false
+        }
+      },
+      "featured-products": {
+        "type": "featured-products",
+        "disabled": true,
+        "settings": {
+          "collection": "frontpage",
+          "rows": 1
+        }
+      },
+      "image-content": {
+        "type": "image-content",
+        "blocks": {
+          "image-content-0": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/PPC_04.jpg"
+            }
+          },
+          "image-content-1": {
+            "type": "text_block",
+            "settings": {
+              "title": "Located in Downtown Toronto",
+              "text": "<p>Come down to the bunker&nbsp;for a visit and check out our line of T-shirts and apparel, get a quote on a bulk screen printing run, or pick up your fresh deck of custom stickers.<\/p>",
+              "align": "left"
+            }
+          }
+        },
+        "block_order": [
+          "image-content-0",
+          "image-content-1"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/PARANOID_STICKERS_4.png",
+          "logo_max_width": "1200",
+          "main_linklist": "main-menu",
+          "promo_bar_enable": true,
+          "promo_bar_text": "FREE SHIPPING ON ALL CANADIAN ORDERS - PICKUP AVAILABLE IN OUR DOWNTOWN TORONTO SHOP",
+          "promo_bar_link": "shopify:\/\/collections\/custom-vinyl-stickers"
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "product_tags_enable": true,
+          "product_sorting_enable": true
+        }
+      },
+      "1530829235621": {
+        "type": "map",
+        "settings": {
+          "map_title": "PARANOID PRINT CO.",
+          "address": "<p>609 QUEEN STREET WEST<br>Toronto, Canada<\/p>\n<p>Mon - Fri, 11am - 6pm<br>Weekends, By Appointment&nbsp;<\/p>",
+          "map_address": "609 Queen Street West",
+          "button": "Directions",
+          "show_pin": true,
+          "api_key": "AIzaSyCZllF0k7UgIcgmphN7rCtjndjmUm66nGo",
+          "image": "shopify:\/\/shop_images\/PPC_02.jpg",
+          "position": "center center"
+        }
+      },
+      "1530836456005": {
+        "type": "gallery",
+        "blocks": {
+          "1530836456005-0": {
+            "type": "image_block",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/SLIDE_16.jpg",
+              "image_align": "center center"
+            }
+          }
+        },
+        "block_order": [
+          "1530836456005-0"
+        ],
+        "settings": {
+          "gallery_height": "short"
+        }
+      },
+      "1530893535688": {
+        "type": "featured-product",
+        "settings": {
+          "product": "die-cut-sticker",
+          "enable_ajax": true,
+          "stock_enable": false,
+          "social_sharing_products": true,
+          "enable_payment_button": false
+        }
+      },
+      "1530893895247": {
+        "type": "featured-product",
+        "settings": {
+          "product": "square-rectangle-sticker",
+          "enable_ajax": true,
+          "stock_enable": false,
+          "social_sharing_products": true,
+          "enable_payment_button": false
+        }
+      },
+      "1530894017259": {
+        "type": "featured-product",
+        "settings": {
+          "product": "circle-stickers",
+          "enable_ajax": true,
+          "stock_enable": false,
+          "social_sharing_products": true,
+          "enable_payment_button": false
+        }
+      },
+      "product-custom-sticker-template": {
+        "type": "product-custom-sticker-template",
+        "settings": {
+        }
+      },
+      "columns": {
+        "type": "columns",
+        "blocks": {
+          "1530961323217": {
+            "type": "text_block",
+            "settings": {
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "image": "",
+              "image_align": "top center"
+            }
+          },
+          "1530961326030": {
+            "type": "text_block",
+            "settings": {
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "image": "",
+              "image_align": "top center"
+            }
+          },
+          "1530961327856": {
+            "type": "text_block",
+            "settings": {
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "image": "",
+              "image_align": "top center"
+            }
+          }
+        },
+        "block_order": [
+          "1530961323217",
+          "1530961326030",
+          "1530961327856"
+        ],
+        "settings": {
+          "title": "Text columns with images"
+        }
+      },
+      "video": {
+        "type": "video",
+        "settings": {
+          "button_label": "",
+          "video_url": "",
+          "cover_image": "",
+          "cover_image_position": "center center",
+          "cover_image_height": "short",
+          "show_overlay": true,
+          "overlay_color": "#000000",
+          "overlay_opacity": 30
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "1530961289028": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1530961291763": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "1530961293150": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "1530961289028",
+          "1530961291763",
+          "1530961293150"
+        ],
+        "settings": {
+          "title": "Testimonials"
+        }
+      }
+    },
+    "content_for_index": [
+      "1530893535688",
+      "1530893895247",
+      "1530894017259",
+      "featured-collections",
+      "featured-products",
+      "1530836456005",
+      "image-content",
+      "1530829235621"
+    ]
+  },
+  "presets": {
+    "Snowboards": {
+      "checkout_accent_color": "#006eff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#006eff",
+      "checkout_call_to_action_color": "#006eff",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#030303",
+      "color_body_text": "#666",
+      "color_button_bg": "#006eff",
+      "color_button_text": "#fff",
+      "color_content_bg": "#fff",
+      "color_footer_bg": "#030303",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#030303",
+      "color_header_links": "#fff",
+      "color_hero_bg": "#006eff",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#1a1a1a",
+      "type_accent_family": "unica_one_n4",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_base_family": "karla_n4",
+      "type_base_size": "16px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true,
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "placeholder": {
+              "type": "slide",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "placeholder"
+          ],
+          "settings": {
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "linklist": {
+              "type": "menu",
+              "settings": {
+              }
+            },
+            "social": {
+              "type": "social",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "linklist",
+            "social"
+          ],
+          "settings": {
+          }
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {
+              }
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {
+          }
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "image-content": {
+          "type": "image-content",
+          "blocks": {
+            "image-content-0": {
+              "type": "image_block",
+              "settings": {
+              }
+            },
+            "image-content-1": {
+              "type": "text_block",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "image-content-0",
+            "image-content-1"
+          ],
+          "settings": {
+          }
+        }
+      },
+      "content_for_index": [
+        "featured-collections",
+        "featured-products",
+        "image-content"
+      ]
+    },
+    "Outdoors": {
+      "checkout_accent_color": "#f4743c",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#f4743c",
+      "checkout_call_to_action_color": "#f4743c",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#1a1a1a",
+      "color_body_text": "#666",
+      "color_button_bg": "#c04f1d",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#213236",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#213236",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#f4743c",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#425154",
+      "type_accent_family": "lora_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": false,
+      "type_base_family": "roboto_n4",
+      "type_base_size": "14px",
+      "type_nav_size": "15px",
+      "type_nav_spacing": false,
+      "type_nav_transform": false
+    },
+    "Boxing": {
+      "checkout_accent_color": "#d8232f",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#d8232f",
+      "checkout_call_to_action_color": "#d8232f",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f0f0f0",
+      "color_body_headings": "#222222",
+      "color_body_text": "#666",
+      "color_button_bg": "#d8232f",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#222222",
+      "color_footer_text": "#ffffff",
+      "color_header_bg": "#222222",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#d8232f",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#303030",
+      "type_accent_family": "open_sans_condensed_n7",
+      "type_accent_spacing": false,
+      "type_accent_transform": true,
+      "type_base_family": "source_sans_pro_n4",
+      "type_base_size": "17px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true
+    }
+  }
+}
